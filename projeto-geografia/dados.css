@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+@font-face {
+    font-family: fontBiblio;
+    src: url(fonte/TheLeagueofMoveableType-Raleway/Raleway-ExtraLight.ttf);
+}
+
+.box {
+    display: grid;
+    grid-template-areas: "titulo"
+                         "imag";
+    grid-template-rows: 15vh 75vh;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    font-family: fontBiblio;
+    font-weight: 100;
+    background-color: #D2D2D2;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px gray;
+    text-shadow: 2px 1px 1px gray;
+}
+
+.imag {
+    grid-area: imag;
+
+}
+.imgs {
+    display: flex;
+    justify-content: center;
+
+}
+
+#form {
+    height: 80vh;
+
+}

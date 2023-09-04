@@ -1,0 +1,563 @@
+body {
+    margin: 0px;
+    background-color: white;
+}
+
+@font-face {
+    font-family: fontTitulo;
+    src: url(fonte/sans-culottes/SansCulottes.ttf);
+}
+
+@font-face {
+    font-family: fontTop-2;
+    src: url(fonte/TheLeagueofMoveableType-Raleway/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: fontRodape;
+    src: url(fonte/TheLeagueofMoveableType-Raleway/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: fontConteudo;
+    src: url(fonte/TheLeagueofMoveableType-Raleway/Raleway-Light.ttf) format(truetype);
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+img {
+    height: 250px;
+    margin-right: 3px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3em;
+    font-family: fontTitulo;
+    font-weight: 100;
+    text-shadow: 2.5px 1px 1px #3d281d;
+}
+
+h2 {
+    font-weight: 100;
+    font-family: fontTitulo;
+    text-indent: 7.5em;
+    font-size: 1.4em;
+}
+
+a {
+    color: black;
+    margin: 2px 0px;
+    padding: 2px 0px;
+}
+
+
+dd {
+    padding-left: 25em;
+
+}
+
+.box {
+    display: grid;
+    grid-template-areas: "item-0"
+                         "topicos"
+                         "item-1"
+                         "cont-1"
+                         "item-2"
+                         "cont-2"
+                         "item-3"
+                         "cont-3"
+                         "item-4"
+                         "cont-4"
+                         "item-5"
+                         "cont-5"
+                         "item-6"
+                         "cont-6"
+                         "item-7"
+                         "cont-7"
+                         "item-8"
+                         "cont-8"
+                         "item-9"
+                         "cont-9"
+                         "item-10"
+                         "cont-10"
+                         "item-11"
+                         "cont-11"
+                         "item-12"
+                         "cont-12"
+                         "item-16"
+                         "cont-16"
+                         "item-13"
+                         "cont-13"
+                         "item-14"
+                         "cont-14"
+                         "item-15"
+                         "cont-15"
+                         "bibliografia"
+                         "rodape-16"
+    ;
+}
+
+.topicos {
+    grid-area: topicos;
+    height: 10vh;
+    top: 0%;
+    background-image: linear-gradient(to bottom, #F2F2F2, rgb(210, 210, 210) );
+    position: sticky;
+    z-index: 9;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.350);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: grid;
+    grid-template-areas: "imag-top top-1"
+                         "imag-top top-2";
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 4vh 5.6vh;
+}
+
+.imag-top {
+    grid-area: imag-top;
+}
+
+.imag-topi {
+    height: 9vh;
+}
+
+.top-1 {
+    grid-area: top-1;
+
+}
+
+
+
+.top-2 {
+    grid-area: top-2;
+    
+}
+
+
+
+.principal {
+    height: 19vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+
+
+
+.equipe {
+    grid-area: equipe;
+    display: flex;
+
+}
+.tema-1 {
+    grid-area: tema-1;
+    display: flex;
+    text-indent: 3em;
+}
+
+
+.tema {
+    grid-area: tema;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    font-size: 2em;
+
+}
+
+
+.image-1 {
+    grid-area: p1;
+
+}
+
+.image-2 {
+    grid-area: p2;
+    padding-right: 10px;
+
+}
+
+.p1 {
+    height: 17vh;
+    width: auto;
+
+}
+.p2 {
+    height: 17vh;
+    width: auto;
+
+}
+
+.titulo {
+    height: 100vh;
+    width: 100%;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fontTitulo;
+    font-size: 4.5em;
+    color: white;
+    font-weight: 100;
+    text-shadow: 5px 2px 2px rgb(86, 86, 86);
+
+}
+
+.conteudo {
+    height: auto;
+    width: 67.4%;
+    background-color: #fdfdfd;
+    font-family: fontConteudo;
+    padding: 30px 220px 100px 220px;
+    font-weight: 100;
+}
+
+.afro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.confg {
+    height: 0px;
+}
+
+.imag {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 11px;
+}
+
+.pFormatado {
+    padding-bottom: 11px;
+    padding-top: 5px;
+    text-indent: 3em;
+    font-family: fontConteudo;
+    font-size: 1.2em;
+    color: black;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.divh1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+div.parallax {
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+div.parallax:after {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+
+}
+
+.item-0 {
+    grid-area: item-0;
+}
+
+
+.item-1 {
+    grid-area: item-1;
+    background-size: cover;
+    background-image: url(imagens/Racismo-preconceito.jpg);
+}
+
+.cont-1 {
+    grid-area: cont-1;
+}
+
+
+.item-2 {
+    grid-area: item-2;
+    background-size: cover;
+    background-image: url(imagens/pexels-lucas-andrade-14547930-corte1.png);
+}
+
+.cont-2 {
+    grid-area: cont-2;
+}
+
+.item-3 {
+    grid-area: item-3;
+    background-size: cover;
+    background-image: url(imagens/abolicao.jpg);
+}
+
+.cont-3 {
+    grid-area: cont-3; 
+}
+
+.item-4 {
+    grid-area: item-4;
+    background-size: cover;
+    background-image: url(imagens/graficos-2.jpg);
+
+}
+
+.cont-4 {
+    grid-area: cont-4;
+}
+
+.item-5 {
+    grid-area: item-5;
+    background-size: cover;
+    background-image: url(imagens/leis-2.jpg);
+}
+
+.cont-5 {
+    grid-area: cont-5;
+}
+
+.item-6 {
+    grid-area: item-6;
+    background-size: cover;
+    background-image: url(imagens/cultura-2.jpg);
+
+}
+
+.cont-6 {
+    grid-area: cont-6;
+}
+
+.item-7 {
+    grid-area: item-7;
+    background-size: cover;
+    background-image: url(imagens/declaração-2.jpg);
+}
+
+.cont-7 {
+    grid-area: cont-7;
+}
+
+.item-8 {
+    grid-area: item-8;
+    background-size: cover;
+    background-image: url(imagens/desigualdade.png);
+}
+
+.cont-8 {
+    grid-area: cont-8;
+}
+
+.item-9 {
+    grid-area: item-9;
+    background-size: cover;
+    background-image: url(imagens/educacao-4.jpg);
+}
+
+.cont-9 {
+    grid-area: cont-9; 
+}
+
+.item-10 {
+    grid-area: item-10;
+    background-size: cover;
+    background-image: url(imagens/violência-1.jpg);
+}
+
+.cont-10 {
+    grid-area: cont-10;  
+}
+
+.item-11 {
+    grid-area: item-11;
+    background-size: cover;
+    background-image: url(imagens/casos.jpeg);
+}
+
+.cont-11 {
+    grid-area: cont-11;  
+}
+
+.item-12 {
+    grid-area: item-12;
+    background-size: cover;
+    background-image: url(imagens/movimento-3.jpg);
+}
+
+.cont-12 {
+    grid-area: cont-12; 
+}
+
+.item-16 {
+    grid-area: item-16;
+    background-image: url(imagens/nubia-principal-2.jpg);
+    background-size: cover;
+}
+
+.cont-16 {
+    grid-area: cont-16;
+
+}
+
+.item-13 {
+    grid-area: item-13;
+    background-size: cover;
+    background-image: url(imagens/cenario.jpg);
+}
+
+.cont-13 {
+    grid-area: cont-13;
+}
+
+.item-14 {
+    grid-area: item-14;
+    background-size: cover;
+    background-image: url(imagens/frases-3.jpg);
+}
+
+.cont-14 {
+    grid-area: cont-14;
+}
+
+.item-15 {
+    grid-area: item-15;
+    background-size: cover;
+    background-image: url(imagens/livros.jpg);
+}
+
+.cont-15 {
+    grid-area: cont-15;
+}
+
+.bibliografia {
+    grid-area: bibliografia;
+    background-image: linear-gradient(to bottom, #fdfdfd , rgb(210, 210, 210));
+    /* rgb(235, 235, 235) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fontConteudo;
+    height: 10vh;
+}
+
+.rodape-16 {
+    grid-area: rodape-16;
+    height: auto;
+    background-color: rgb(210, 210, 210);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.indentado {
+    text-indent: 1.2em;
+}
+.destacado {
+    text-decoration: underline gray;
+    font-size: 2.4em;
+    text-indent: 4.5em;
+}
+
+
+.liFormatado {
+    padding-right: 40px;
+    list-style-type: none;
+}
+
+.liFormatado > a {
+    text-decoration: none;
+
+}
+.olTopicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 96%;
+    font-family: fontTop-2;
+    font-weight: 100;
+}
+.olTopicos > li > a:hover {
+    text-decoration: underline #a8a8a8;
+
+}
+
+
+.divh2Formatado {
+    display: flex;
+    justify-content: start;
+
+}
+
+.h2Formatado {
+    text-align: center;
+    font-size: 1.9em;
+    font-family: fontTitulo;
+    font-weight: 100;
+    text-shadow: 2.5px 1px 1px #3d281d;
+    text-indent: 0px;
+
+}
+
+.citacao {
+    text-indent: 0px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    color: black;
+}
+
+.modificado {
+    font-family: fontRodape;
+    text-indent: 0em;
+    padding: 15px 0px 0px 0px;
+    margin: 0px;
+}
+
+.sem {
+    list-style: none;
+}
+
+.modificado-1 {
+    font-family: fontConteudo;
+
+}
+
+#h1form {
+    font-size: 1.20em;
+
+}
+
+.aFormatado {
+    color: black;
+    text-indent: 0em;
+    padding: 0px;
+    margin: 0px;
+}
+.desenvolvedor {
+    font-size: 1.1em;
+}
+
+.semInde {
+    text-indent: 0em;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    
+}
