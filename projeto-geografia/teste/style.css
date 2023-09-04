@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    font-size: 2.0em;
+
+}
+p {
+    text-align: justify;
+}
+h2 {
+    font-size: 1.5;
+    color: #18200e;
+}
+.box {
+    height: 100vh;
+    width: 98.89vw;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                         "menuE conteudo"
+                         "menuE bibliografia"
+                         "rodape rodape"
+    ;
+
+    grid-template-columns: 80px auto;
+    grid-template-rows: 80px auto 80px;
+}
+
+.titulo h1 {
+    text-align: center;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin: 0px;
+    color: #FEFAE0;
+}
+
+.titulo {
+    grid-area: titulo;
+    background-color: #25190f;
+
+}
+.menuE {
+    grid-area: menuE;
+    background-color: #25190f;
+
+}
+.conteudo{
+    grid-area: conteudo;
+    background-color: #FEFAE0;
+
+}
+.bibliografia {
+    grid-area: bibliografia;
+    background-color: #FEFAE0;
+
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #553922;
+    color: #FEFAE0;
+}
